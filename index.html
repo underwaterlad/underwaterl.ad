@@ -1,48 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Underwaterlad</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>what you know will hurt you.</title>
+<link rel="stylesheet" type="text/css" href="./index.css"/>
+<style>
+body,aside,main{box-sizing:border-box;}
+aside{font-size:10px;border-right:1px solid #000000;float:left;padding-right:20px;padding-bottom:20px;height:100%;overflow-y:auto;}
+main{position:relative;padding-left:20px;height:100%;overflow:hidden;}
+h2:nth-of-type(n+2){margin-top:20px;}
+footer{margin-top:20px;padding-top:20px;text-align:right;border-top:1px solid black;}
+#fantomes{width:100px;}
+#merveilles{width:32px;image-rendering:pixelated;}
+#webring{width:32px;}
+#poem{position:absolute;top:20px;left:40px;color:#FFFFFF;}
+</style>
 </head>
 <body>
-  <div class="page">
-    <aside class="sidebar">
-      <h1>Underwaterlad</h1>
-
-      <nav>
-        <p>Tools</p>
-        <ul>
-          <li><a href="#">fm</a></li>
-          <li><a href="#">sym</a></li>
-          <li><a href="#">breathe</a></li>
-        </ul>
-
-        <p>Words</p>
-        <ul>
-          <li><a href="#">a-lost-thing</a></li>
-          <li><a href="#">dear-agnes</a></li>
-        </ul>
-
-        <p>Elsewhere</p>
-        <ul>
-          <li><a href="#">@deianeira.co</a></li>
-          <li><a href="#">about</a></li>
-        </ul>
-      </nav>
-
-      <footer>
-        <p>&copy; MMXXV Underwaterlad</p>
-      </footer>
-    </aside>
-
-    <main class="splash">
-      <img src="splash.jpg" alt="Splash Art" />
-      <div class="overlay">
-        <p>“This is a stillness, not a silence.”</p>
-      </div>
-    </main>
-  </div>
+<aside>
+	<img id="mark" src="./res/deianeira-mark.png" alt="deianeira mark"/>
+	<h2>tools/toys</h2>
+	<ul>
+		<li><a href="https://deianeira.co/fm">fm</a></li>
+		<li><a href="https://deianeira.co/pbn-and-pal">.pbn-and-.pal</a></li>
+		<li><a href="https://deianeira.co/view-pbn">view-pbn</a></li>
+		<li><a href="https://deianeira.co/symg">symg</a></li>
+		<li><a href="https://deianeira.co/sym">sym</a></li>
+		<li><a href="https://deianeira.co/breathe">breathe</a></li>
+		<li><a href="https://deianeira.co/chicken">chicken</a></li>
+	</ul>
+	<h2>words</h2>
+	<ul>
+		<li><a href="https://fantomeszine.com/issues/issue-2"><img id="fantomes" src="./res/fantomes.png" alt="mark of fantomes zine" /></a></li>
+		<li><a href="https://deianeira.co/silhouette-russian">silhouette-russian</a></li>
+		<li><a href="https://deianeira.co/words/past-this-time-of-suffering--now-now--what-is-left-of-you.html">Past This Time of Suffering, Now, Now, What is Left of You?</a></li>
+		<li><a href="https://deianeira.co/words/recollection-reflection.html">recollection reflection</a></li>
+		<li><a href="https://deianeira.co/words/no-reason--change-of-season.html">no reason, change of season</a></li>
+		<li><a href="https://deianeira.co/words/for-david.html">for David</a></li>
+		<li><a href="https://deianeira.co/words/dear-agnes.html">Dear Agnes,</a></li>
+		<li><a href="https://deianeira.co/words/a-lost-thing.html">a-lost-thing</a></li>
+		<li><a href="https://deianeira.co/words/one-forkful-at-a-time.html">1 forkful at a time</a></li>
+		<li><a href="https://deianeira.co/words/for-paul">for-paul</a></li>
+	</ul>
+	<h2>visual</h2>
+	<ul>
+		<li><a href="https://deianeira.co/33rpm">33rpm</a></li>
+		<li><a href="https://deianeira.co/visual/one-on-the-line">one-on-the-line</a></li>
+		<li><a href="https://deianeira.co/visual/to-be-far-away">to-be-far-away</a></li>
+	</ul>
+	<h2>audio</h2>
+	<ul>
+		<li><a href="https://deianeira.co/audio/my-brother-is-dead-and-soon-i-will-too">my brother is dead and soon i will, too</a></li>
+		<li><a href="https://ryandorssers.bandcamp.com/track/casting-couch">Casting Couch by PA Child Care</a></li>
+		<li><a href="https://deianeira.co/audio/variscene">variscene</a></li>
+		<li><a href="https://deianeira.co/audio/the-disapparition-of-poor-mary">the-disapparition-of-poor-mary</a></li>
+		<li><a href="https://deianeira.co/audio/playuntilyourenotinloveanymore">playuntilyou'renotinloveanymore</a></li>
+		<li><a href="https://deianeira.co/audio/small-stretch-of-thought--endless-stretch-of-land">small-stretch-of-thought//endless-stretch-of-land</a></li>
+	</ul>
+	<h2>other's words</h2>
+	<ul><li><a href="https://deianeira.co/others-words/immortality--clare-harner--1934.html">Immortality by Clare Harner, 1934</a></li></ul>
+	<h2>elsewhere</h2>
+	<ul class="inline">
+		<li><a href="https://webring.xxiivv.com"><img id="webring" src="./res/webring.png" alt="mark of webring.xxiivv.com"></a></li>
+		<li><a href="https://merveilles.town/@deianeira"><img id="merveilles" src="./res/merveilles.png" alt="mark of merveilles.town"/></a></li>
+	</ul>
+	<footer>
+		<span>MMXXIII Δηϊάνειρα</span><br/>
+		<a href="mailto:d@deianeira.co">d@deianeira.co</a><br/>
+		<a href="https://deianeira.co/about.html">about</a><br/>
+	</footer>
+</aside>
+<main><img src="./res/0.png" alt="what you know will hurt you."/>
+<pre id="poem"><em>It was at first a startling discovery
+That I could turn back time
+But let it be known
+I never used it to change an outcome
+Settle a score
+Cheat
+Or do better
+Only to roll back a moment at a time
+Say something that came to me late
+And I'd thought were more clever</em></pre>
+</main>
 </body>
 </html>
