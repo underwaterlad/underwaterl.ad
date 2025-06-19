@@ -4,7 +4,7 @@
   --font-family:"Verdana", sans-serif;
   --font-size:x-small;
   --sidebar-border:1px solid #E6E6C3;
-  --link-color:blue;
+  --link-color:black;
   --bg-color:white;
   --text-color:black;
   --sidebar-bg:transparent;
@@ -90,6 +90,7 @@ content {
 }
 .post .date {
   margin-bottom:10px;
+  padding-left:10px;
 }
 .entry {
   padding-left:10px;
