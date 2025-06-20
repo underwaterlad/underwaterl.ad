@@ -50,7 +50,7 @@ body a {
 }
 .subtitle {
   font-weight:bold;
-  padding-top:3px;
+  padding-top:5px;
   margin-bottom:5px;
 }
 .boxwrap {
@@ -77,7 +77,7 @@ body a {
   width:40%;
 }
 content {
-    display:flex;
+  display:flex;
   margin:0 auto;
   width:700px;
   
