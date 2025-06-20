@@ -37,6 +37,7 @@ body a {
 }
 .flex {
   display:flex;
+  align-items: flex-start;
 }
 .container {
   max-width:700px;
