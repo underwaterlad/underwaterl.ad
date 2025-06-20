@@ -1,6 +1,6 @@
 function loadEntry() {
   const hash = window.location.hash.slice(1);
-  const filename = hash ? `${hash}.txt` : 'thebutterflygarden.txt';
+  const filename = hash ? `${hash}.md` : 'thebutterflygarden.md';
   const file = `entries/${filename}`;
 
   console.log("Loading:", file);
@@ -10,8 +10,9 @@ function loadEntry() {
       if (!res.ok) throw new Error("Not found");
       return res.text();
     })
-    .then(text => {
-      document.getElementById("content").innerHTML = text;
+    .then(markdown => {
+      const html = marked.parse(markdown);
+      document.getElementById("content").innerHTML = html;
     })
     .catch(() => {
       document.getElementById("content").innerHTML = "<p>Entry not found.</p>";
