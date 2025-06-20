@@ -30,7 +30,7 @@ body a {
 }
 .box {
   width:200px;
-  border:var(--sidebar-border);
+  /* border:var(--sidebar-border); */
   margin-bottom:15px;
   padding-bottom:10px;
   background-color:var(--sidebar-bg);
