@@ -24,6 +24,11 @@ body {
 body a {
   color:var(--link-color);
 }
+
+.entry p:first-child {
+  margin-top: 0;
+}
+
 .left {
   width:200px;
   display:flex;
