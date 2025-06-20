@@ -14,13 +14,6 @@
   /* for bg image, above would be url('site.com/image.jpg'); */
 }
 
-.left {
-  background: rgba(255, 0, 0, 0.1);
-}
-.right {
-  background: rgba(0, 0, 255, 0.1);
-}
-
 body {
   font-family:var(--font-family);
   font-size:var(--font-size);
