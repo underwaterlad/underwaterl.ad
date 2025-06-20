@@ -1,5 +1,5 @@
-### the butterfly garden
-##### 20.06.25
+the butterfly garden
+20.06.25
 
 I am in a butterfly garden in the airport in Singapore. This is a real place, or at least it was real at the time of me being there. I remember how I am amazed at how it is a real butterfly garden and not a loose collection of souvenir, coffee, and misc. travel accessory shops that I expect to find at airports. Malls tend to have things like this to differentiate themselves and promote themselves above other malls - something as esoteric and contextually unexpected as a butterfly garden seems weird when I don't feel like I've ever based my choice of connecting airport on anything other than time/affordability.  Like who says "We need to travel via Singapore because their butterfly garden is better than Kuala Lumpur's model train exhibit and Bangkok's wacky mirror-and-hedge maze, which suck."
 
