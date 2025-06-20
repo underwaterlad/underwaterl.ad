@@ -1,7 +1,9 @@
 function loadEntry() {
   const hash = window.location.hash.slice(1);
-  const filename = hash ? `${hash}.txt` : '20.06.25.txt';
+  const filename = hash ? `${hash}.txt` : 'thebutterflygarden.txt';
   const file = `entries/${filename}`;
+
+  console.log("Loading:", file);
 
   fetch(file)
     .then(res => {
