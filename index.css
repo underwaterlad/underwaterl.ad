@@ -27,6 +27,8 @@ body a {
   width:200px;
   display:flex;
   flex-wrap:wrap;
+  margin-top: 0;
+  padding-top: 0;
 }
 .box {
   width:200px;
@@ -34,6 +36,8 @@ body a {
   margin-bottom:15px;
   padding-bottom:10px;
   background-color:var(--sidebar-bg);
+  margin-top: 0;
+  padding-top: 0;
 }
 .flex {
   display:flex;
@@ -47,7 +51,8 @@ body a {
   margin-left:10px;
   background-color:var(--content-bg);
   padding:var(--content-padding);
-  
+  margin-top: 0;
+  padding-top: 0;
 }
 .subtitle {
   font-weight:bold;
@@ -57,6 +62,8 @@ body a {
 .boxwrap {
   padding-left:10px;
   padding-bottom:5px;
+  margin-top: 0;
+  padding-top: 0;
 }
 .footer {
   text-align:center;
@@ -83,6 +90,11 @@ content {
   width:700px;
   
 }
+
+.post {
+  padding: 0;
+  margin: 0;
+}
 /* .post .title {
   font-size:16px;
   font-weight:bold;
@@ -95,6 +107,8 @@ content {
 } */
 .entry {
   padding-left:10px;
+  margin-top: 0;
+  padding-top: 0;
 }
 .postFooter {
   padding-top:10px;
