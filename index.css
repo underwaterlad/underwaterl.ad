@@ -48,6 +48,7 @@ body a {
 .container {
   max-width:700px;
   margin:0 auto;
+  padding-top:5px;
 }
 .right {
   margin-left:10px;
