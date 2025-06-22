@@ -7,7 +7,7 @@ emry, lurker of the loch
 beza, the bounding spring  
 yorion, sky nomad  
 thragtusk  
-resoration angel  
+restoration angel  
 approach of the second sun  
 solitary confinement  
 kessig wolf run  
@@ -38,4 +38,4 @@ villainous wealth
 maelstrom wanderer  
 urabrask, heretic praetor  
 runaway steam-kin  
-galadriel of lothlorien
+galadriel of lothlorien  
