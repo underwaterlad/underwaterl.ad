@@ -2,18 +2,18 @@ magic: the gathering cards that I like (in no particular order)
 
 22.06.25
 
-rocco, street chef
-emry, lurker of the loch
-beza, the bounding spring
-yorion, sky nomad
-thragtusk
-resoration angel
-approach of the second sun
-solitary confinement
-kessig wolf run
-rosie cotton of south lane
-cemetery tampering
-angel of serenity
+rocco, street chef\
+emry, lurker of the loch\
+beza, the bounding spring\
+yorion, sky nomad\
+thragtusk\
+resoration angel\
+approach of the second sun\
+solitary confinement\
+kessig wolf run\
+rosie cotton of south lane\
+cemetery tampering\
+angel of serenity\
 dour port-mage
 perch protection
 mikokoro, center of the sea
