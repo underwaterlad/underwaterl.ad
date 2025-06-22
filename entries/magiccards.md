@@ -38,4 +38,4 @@ villainous wealth\
 maelstrom wanderer\
 urabrask, heretic praetor\
 runaway steam-kin\
-galadriel of lothlorien\
+galadriel of lothlorien
