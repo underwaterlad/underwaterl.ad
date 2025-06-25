@@ -43,5 +43,5 @@ escape to the wilds
 showdown of the skalds  
 jhoira of the ghitu  
 matter reshaper  
-rendmaw, creaking nest
+rendmaw, creaking nest  
 jenson carthalion, druid exile
