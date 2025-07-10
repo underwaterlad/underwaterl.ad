@@ -1,6 +1,6 @@
 function loadEntry() {
   const hash = window.location.hash.slice(1);
-  const filename = hash ? `${hash}.md` : 'statorithmicarchitecture.md';
+  const filename = hash ? `${hash}.md` : 'dryrun.md';
   const file = `entries/${filename}`;
 
   console.log("Loading:", file);
