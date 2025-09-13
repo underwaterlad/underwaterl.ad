@@ -1,5 +1,7 @@
 Various Thoughts About Video Games I Have Been Playing Lately
 
+13.09.2025
+
 No Man's Sky
 The problem with this game on release is that the procedural generation was not as good as the developers made out to be, and also the UI was dog-ass. Now, the pro-gen is very-good-to-excellent and the UI is dog-ass and the maintenance/ugrade systems are astonishinly horrible. Inventory space is hobbled for no reason that I can discern and requires chores to expand. Your spaceship has three (3) different types of fuel which need to be topped up frequently, via chores. You and your gun run on batteries, and again, chores will help replenish them. This would be an excellent game if it didn't get in its own way at every turn.
 
