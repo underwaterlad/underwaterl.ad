@@ -1,6 +1,6 @@
 function loadEntry() {
   const hash = window.location.hash.slice(1);
-  const filename = hash ? `${hash}.md` : 'games.md';
+  const filename = hash ? `${hash}.md` : 'hello.md';
   const file = `entries/${filename}`;
 
   console.log("Loading:", file);
