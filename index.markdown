@@ -9,4 +9,4 @@ title: home
 
 # scott donaldson
 
-This is a placeholder homepage.
+This is a placeholder homepage. I should see this in the local preview.
