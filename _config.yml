@@ -29,8 +29,6 @@ github_username:
 theme: poole
 plugins:
   - jekyll-feed
-title: "scott donaldson"
-url: ""
 
 # Exclude from processing.
 # The following items will not be processed, by default.
