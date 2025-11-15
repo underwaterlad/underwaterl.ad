@@ -7,20 +7,24 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body class="home-landing">
-  <div class="home-wrapper">
-    <div class="home-center" role="banner" aria-labelledby="site-title">
-      <h1 id="site-title" class="home-title">{{ site.title }}</h1>
+  <div class="site-wrapper">
+    {% include sidebar.html %}
 
-      <nav class="home-nav" aria-label="Landing navigation">
-        <a href="{{ '/about' | relative_url }}">About</a>
-        <a href="{{ '/posts' | relative_url }}">Posts</a>
-        <a href="{{ '/contact' | relative_url }}">Contact</a>
-      </nav>
-    </div>
+    <main class="content">
+      <div class="home-center">
+        <h1 id="site-title" class="home-title">{{ site.title }}</h1>
 
-    <div class="home-image" role="img" aria-label="Homepage image">
-      <img src="{{ '/assets/img/home.jpg' | relative_url }}" alt="Homepage image" />
-    </div>
+        <nav class="home-nav" aria-label="Landing navigation">
+          <a href="{{ '/about' | relative_url }}">About</a>
+          <a href="{{ '/posts' | relative_url }}">Posts</a>
+          <a href="{{ '/contact' | relative_url }}">Contact</a>
+        </nav>
+      </div>
+
+      <div class="home-image">
+        <img src="{{ '/assets/img/home.jpg' | relative_url }}" alt="Homepage image" />
+      </div>
+    </main>
   </div>
 </body>
 </html>
