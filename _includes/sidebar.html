@@ -1,19 +1,10 @@
 <!-- _includes/sidebar.html -->
-<aside class="sidebar" role="complementary" aria-label="Site navigation">
-  <div class="sidebar-inner">
-    <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-
-    <nav class="site-nav" aria-label="Main">
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/about' | relative_url }}">About</a>
-      <a href="{{ '/posts' | relative_url }}">Posts</a>
-      <a href="{{ '/contact' | relative_url }}">Contact</a>
-    </nav>
-
-    {% if site.twitter_username %}
-      <div class="social">
-        <a href="https://twitter.com/{{ site.twitter_username }}" rel="me">Twitter</a>
-      </div>
-    {% endif %}
-  </div>
-</aside>
+<div class="sidebar">
+  <h1 class="sidebar-title">{{ site.title }}</h1>
+  <nav class="sidebar-nav" aria-label="Site navigation">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/about' | relative_url }}">About</a>
+    <a href="{{ '/posts' | relative_url }}">Posts</a>
+    <a href="{{ '/contact' | relative_url }}">Contact</a>
+  </nav>
+</div>
