@@ -1,0 +1,95 @@
+/* assets/css/style.css
+   Minimal, clear styles for: home (no-scroll) + default (sidebar + content).
+*/
+
+/* Reset / base */
+* { box-sizing: border-box; }
+html,body { height:100%; margin:0; }
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#111; background:#fff; }
+
+/* -------------------- HOME LANDING -------------------- */
+.home-landing { height:100vh; overflow:hidden; display:flex; flex-direction:column; }
+.home-wrapper { display:flex; flex-direction:column; min-height:100vh; }
+
+/* Top area: centered title + nav */
+.home-center {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  height:40vh;          /* top portion for title+menu */
+  padding:1.5rem;
+  text-align:center;
+  z-index:2;
+  background:transparent;
+}
+.home-title { font-size:3rem; margin:0 0 .5rem; letter-spacing: -0.02em; }
+.home-nav a { margin:0 .75rem; text-decoration:none; font-weight:600; color:inherit; }
+
+/* The large image fills the remaining viewport */
+.home-image {
+  flex:1;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  width:100%;
+  min-height:60vh;
+}
+
+/* Prevent scrolling on home page */
+.home-landing .home-wrapper { overflow:hidden; }
+
+/* -------------------- SITE LAYOUT (with sidebar) -------------------- */
+.layout { display:flex; min-height:100vh; }
+
+/* Sidebar */
+.sidebar {
+  width:250px;
+  flex:0 0 250px;      /* fixed width */
+  border-right:1px solid #e6e6e6;
+  background:#fff;
+  padding:2rem 1.5rem;
+  position:fixed;
+  top:0;
+  left:0;
+  height:100vh;
+  overflow:auto;
+}
+.sidebar-inner { display:flex; flex-direction:column; gap:1.25rem; align-items:flex-start; }
+.site-title { font-size:1.1rem; margin:0; }
+.site-title a { text-decoration:none; color:inherit; font-weight:700; }
+
+/* Navigation inside sidebar */
+.site-nav { display:flex; flex-direction:column; gap:.5rem; margin-top:.5rem; }
+.site-nav a { color:inherit; text-decoration:none; font-weight:600; }
+
+/* Main content area to the right of sidebar */
+.content {
+  margin-left:250px;    /* leave room for fixed sidebar */
+  padding:3rem 2.5rem;
+  width:100%;
+  min-height:100vh;
+  overflow-y:auto;      /* scrolling allowed here */
+  -webkit-overflow-scrolling:touch;
+}
+
+/* Page/article styling */
+.page-article, article { max-width:780px; margin:0 auto; line-height:1.6; font-size:1rem; color:#111; }
+
+/* Headings */
+h1,h2,h3 { color:#111; margin-top:0; }
+
+/* Small screens: collapse sidebar to top bar */
+@media (max-width: 900px) {
+  .sidebar { position:relative; width:100%; height:auto; border-right:none; border-bottom:1px solid #eaeaea; }
+  .sidebar-inner { align-items:center; width:100%; }
+  .site-nav { flex-direction:row; gap:1rem; }
+  .content { margin-left:0; padding:1.5rem; }
+  .home-title { font-size:2.2rem; }
+}
+
+/* Accessibility: focus styles */
+a:focus { outline:2px solid #000; outline-offset:2px; }
+
+/* Utility */
+a { color:inherit; }

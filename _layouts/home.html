@@ -1,0 +1,27 @@
+<!-- _layouts/home.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body class="home-landing">
+  <div class="home-wrapper">
+    <div class="home-center" role="banner" aria-labelledby="site-title">
+      <h1 id="site-title" class="home-title">{{ site.title }}</h1>
+
+      <nav class="home-nav" aria-label="Landing navigation">
+        <a href="{{ '/about' | relative_url }}">About</a>
+        <a href="{{ '/posts' | relative_url }}">Posts</a>
+        <a href="{{ '/contact' | relative_url }}">Contact</a>
+      </nav>
+    </div>
+
+    <div class="home-image" role="img" aria-label="Homepage image"
+         style="background-image: url('{{ '/assets/img/home.jpg' | relative_url }}')">
+    </div>
+  </div>
+</body>
+</html>
