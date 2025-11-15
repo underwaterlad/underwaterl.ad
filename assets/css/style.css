@@ -23,8 +23,8 @@ body {
    ====================== */
 .sidebar {
   width: 200px;
-  background: #222;
-  color: #fff;
+  background: #fff;
+  color: #333;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@ body {
 }
 
 .sidebar-nav a {
-  color: #fff;
+  color: #333;
   text-decoration: none;
   margin: 0.5rem 0;
   display: block;
@@ -74,25 +74,26 @@ body.home-landing .content {
   overflow: hidden;
 }
 
-/* Home image container fills right column */
+/* RIGHT COLUMN IMAGE CONTAINER */
 body.home-landing .home-image {
   position: relative;
   width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;  /* align content to bottom */
-  justify-content: center;
+  height: 100%;        /* this MUST remain */
   overflow: hidden;
 }
 
-/* Home image itself */
+/* IMAGE ITSELF */
 body.home-landing .home-image img {
-  width: 100%;          /* fill width of container */
-  height: auto;         /* scale height proportionally */
-  object-fit: cover;
+  position: absolute;  /* ensures no padding or shifting */
+  bottom: 0;           /* stick to bottom */
+  left: 0;
+  width: 100%;
+  height: 100%;        /* force visible height */
+  object-fit: cover;   /* crop to fill */
+  object-position: bottom;
   display: block;
-  margin-bottom: 0;     /* stick bottom edge to viewport */
 }
+
 
 /* ======================
    Headings
