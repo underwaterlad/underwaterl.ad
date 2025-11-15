@@ -40,6 +40,11 @@
   z-index: 1;
 }
 
+.home-landing .sidebar {
+  justify-content: center; /* vertically center menu & title */
+}
+
+
 .home-image img {
   width: 100%;
   height: 100vh;
