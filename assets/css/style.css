@@ -12,7 +12,9 @@ body {
   line-height: 1.5;
 }
 
-/* Root wrapper: sidebar + content */
+/* ======================
+   Root wrapper: sidebar + content
+   ====================== */
 .site-wrapper {
   display: flex;
   min-height: 100vh;
@@ -29,12 +31,10 @@ body {
   height: 100vh;
   background: #fff;
   color: #333;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;   /* cleaned: single value */
-
+  align-items: flex-end;
   padding: 2rem 1rem;
   z-index: 10;
   line-height: 1;
@@ -80,7 +80,7 @@ body.home-landing .content {
 body.home-landing .home-image {
   position: absolute;
   top: 0;
-  left: 200px;     /* sidebar width */
+  left: 200px; /* sidebar width */
   right: 0;
   bottom: 0;
   overflow: hidden;
@@ -99,14 +99,14 @@ body.home-landing .home-image img {
 }
 
 /* ======================
-   Typography
+   Typography (global minimal)
    ====================== */
 h1, h2, h3 {
   margin-top: 0;
 }
 
 /* ======================
-   Links
+   Links (global minimal)
    ====================== */
 a {
   color: inherit;
@@ -167,34 +167,41 @@ body.about-page .content {
 /* ======================
    Blog post page
    ====================== */
-body.post-page .content {
-  padding: 60px;
-  max-width: 800px;
-  margin-left: 200px;
-  height: 100vh;
-  overflow-y: auto;
+.post-content {
+  padding: 5em;
+  max-width: 1000px;
+  margin-left: 0; /* content already offset by main .content margin */
 }
 
-body.post-page h1 {
+.post-content h1 {
   margin-bottom: 10px;
   font-size: 2rem;
 }
 
-body.post-page small {
+.post-content small {
   display: block;
   margin-bottom: 30px;
   color: #777;
 }
 
-body.post-page p {
+.post-content p {
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
 
-body.post-page h2,
-body.post-page h3 {
+.post-content h2,
+.post-content h3 {
   margin-top: 2rem;
   margin-bottom: 1rem;
+}
+
+.post-content a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-content a:hover {
+  text-decoration: underline;
 }
 
 /* ======================
