@@ -1,0 +1,239 @@
+/* ======================
+   Global reset
+   ====================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* ======================
+   Root wrapper: sidebar + content
+   ====================== */
+.site-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ======================
+   Sidebar
+   ====================== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background: #fff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 2rem 1rem;
+  z-index: 10;
+  line-height: 1;
+}
+
+.sidebar-title {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+.sidebar-nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  display: block;
+  text-align: right;
+}
+
+/* ======================
+   Main content
+   ====================== */
+.content {
+  margin-left: 200px;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 0;
+}
+
+/* ======================
+   Homepage
+   ====================== */
+body.home-landing {
+  overflow: hidden;
+}
+
+body.home-landing .content {
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+}
+
+body.home-landing .home-image {
+  position: absolute;
+  top: 0;
+  left: 200px; /* sidebar width */
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+body.home-landing .home-image img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  display: block;
+}
+
+/* ======================
+   Typography (global minimal)
+   ====================== */
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+/* ======================
+   Links (global minimal)
+   ====================== */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ======================
+   Works page – grid
+   ====================== */
+body.works-page .content {
+  padding: 0;
+}
+
+.works-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 40px;
+}
+
+.works-gallery .work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.works-gallery .work img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.works-gallery .work .caption {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #555;
+}
+
+/* ======================
+   About page
+   ====================== */
+body.about-page .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ======================
+   Blog post page
+   ====================== */
+.post-content {
+  padding: 5em;
+  max-width: 1000px;
+  margin-left: 0; /* content already offset by main .content margin */
+}
+
+.post-content h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.post-content small {
+  display: block;
+  margin-bottom: 30px;
+  color: #777;
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.post-content h2,
+.post-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.post-content a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-content a:hover {
+  text-decoration: underline;
+}
+
+/* ======================
+   Blog index page
+   ====================== */
+body.posts-index {
+  overflow: hidden;
+}
+
+body.posts-index .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5em;
+  margin-left: 200px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body.posts-index .posts-list {
+  width: 100%;
+  max-width: 760px;
+  list-style: none;
+}
+
+body.posts-index .posts-list li {
+  margin-bottom: 1rem;
+}
+
+body.posts-index .post-date {
+  color: #777;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
