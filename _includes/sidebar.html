@@ -1,10 +1,11 @@
 <!-- _includes/sidebar.html -->
 <div class="sidebar">
-  <h1 class="sidebar-title">{{ site.title }}</h1>
+  <h1 class="sidebar-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
   <nav class="sidebar-nav" aria-label="Site navigation">
-    <a href="{{ '/' | relative_url }}">home</a>
     <a href="{{ '/works' | relative_url }}">works</a>
-    <a href="https://www.instagram.com/underwaterlad/">instagram</a>
-    <a href="https://x.com/underwaterlad">x</a>
+    <a href="{{ '/log' | relative_url }}">log</a>
+    <a href="{{ '/about' | relative_url }}">about</a>
+    <a href="https://www.instagram.com/underwaterlad/" target="_blank">instagram</a>
+    <a href="https://x.com/underwaterlad" target="_blank">x</a>
   </nav>
 </div>

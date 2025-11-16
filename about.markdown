@@ -1,7 +1,8 @@
 ---
 layout: page
-title: About
+title: about
+body_class: about-page
 permalink: /about/
 ---
 
-this is the about page
+scott (b.1991) is a scottish artist who works on both small and medium sized bits of paper
