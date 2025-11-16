@@ -1,5 +1,5 @@
 /* ======================
-   Global reset and layout
+   Global reset
    ====================== */
 * {
   box-sizing: border-box;
@@ -12,7 +12,7 @@ body {
   line-height: 1.5;
 }
 
-/* Root wrapper */
+/* Root wrapper: sidebar + content */
 .site-wrapper {
   display: flex;
   min-height: 100vh;
@@ -22,19 +22,25 @@ body {
    Sidebar
    ====================== */
 .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 200px;
+  height: 100vh;
   background: #fff;
   color: #333;
-  flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* vertical center */
-  align-items: center;      /* horizontal center optional */
+  justify-content: center;
+  align-items: center;
+  align-items: flex-end;
   padding: 2rem 1rem;
+  z-index: 10;
+  line-height: 1;
 }
 
 .sidebar-title {
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   font-size: 1.5rem;
   text-align: center;
 }
@@ -46,57 +52,63 @@ body {
   display: block;
 }
 
+.sidebar-title,
+.sidebar-nav a {
+  text-align: right;
+}
+
 /* ======================
    Main content
    ====================== */
 .content {
-  flex-grow: 1;
-  position: relative;
-  overflow: auto; /* allows scrolling on normal pages */
-  padding: 1rem;  /* adjust as needed */
+  margin-left: 200px;   /* matches sidebar width */
+  height: 100vh;
+  overflow-y: auto;     /* only the right side scrolls */
+  padding: 0;
 }
 
 /* ======================
    Homepage specific
    ====================== */
+
+/* No scrolling on home */
 body.home-landing {
-  overflow: hidden;  /* no scrolling */
+  overflow: hidden;
 }
 
-body.home-landing .site-wrapper {
-  height: 100vh;
-  width: 100vw;
-}
-
+/* Right column shouldn't scroll */
 body.home-landing .content {
+  height: 100vh;
+  overflow: hidden;
   padding: 0;
-  height: 100%;
-  overflow: hidden;
 }
 
-/* RIGHT COLUMN IMAGE CONTAINER */
+/* Container for homepage image (right column) */
 body.home-landing .home-image {
-  position: relative;
-  width: 100%;
-  height: 100%;        /* this MUST remain */
+  position: absolute;       /* sit above everything except sidebar */
+  top: 0;
+  left: 200px;              /* sidebar width */
+  right: 0;
+  bottom: 0;
   overflow: hidden;
+  z-index: 1;               /* behind the sidebar */
 }
 
-/* IMAGE ITSELF */
+/* Image itself */
 body.home-landing .home-image img {
-  position: absolute;  /* ensures no padding or shifting */
-  bottom: 0;           /* stick to bottom */
+  position: absolute;
+  bottom: 0;                /* align bottom edge */
   left: 0;
   width: 100%;
-  height: 100%;        /* force visible height */
-  object-fit: cover;   /* crop to fill */
-  object-position: bottom;
+  height: 100%;
+  object-fit: cover;        /* crop instead of shrink */
+  object-position: bottom;  /* keep bottom edge aligned */
   display: block;
 }
 
 
 /* ======================
-   Headings
+   Typography
    ====================== */
 h1, h2, h3 {
   margin-top: 0;
@@ -112,4 +124,42 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* ======================
+   Works page – two-column aligned grid
+   ====================== */
+body.works-page .content {
+  padding: 0;
+}
+
+.works-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;   /* two columns */
+  gap: 40px;
+  padding: 40px;
+}
+
+/* Each work item */
+.works-gallery .work {
+  display: flex;
+  flex-direction: column;          /* image on top, caption below */
+  align-items: center;
+}
+
+/* Images in gallery */
+.works-gallery .work img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 10px;             /* space between image and caption */
+  border-radius: 4px;              /* optional: slight rounding */
+}
+
+/* Captions */
+.works-gallery .work .caption {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #555;
 }

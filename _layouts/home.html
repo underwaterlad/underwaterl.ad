@@ -8,13 +8,14 @@
 </head>
 <body class="home-landing">
   <div class="site-wrapper">
+    
     {% include sidebar.html %}
 
-    <main class="content">
-      <div class="home-image">
-        <img src="{{ '/assets/img/home.jpg' | relative_url }}" alt="Homepage image" />
-      </div>
-    </main>
+    <!-- Make home-image a sibling of content, so it fills the right column -->
+    <div class="home-image">
+      <img src="{{ '/assets/img/home.jpg' | relative_url }}" alt="Homepage image">
+    </div>
+
   </div>
 </body>
 </html>
