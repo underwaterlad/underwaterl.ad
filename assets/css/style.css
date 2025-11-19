@@ -329,6 +329,10 @@ body.posts-index .post-date {
     text-align: center !important;
   }
 
+  body.home-landing .sidebar-title {
+    text-align: center !important;
+  }
+
   .works-gallery {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 20px !important;
