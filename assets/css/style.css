@@ -59,6 +59,10 @@ body {
   text-align: right;
 }
 
+.sidebar-back {
+  display: none;
+}
+
 /* ======================
    Main content
    ====================== */
@@ -193,10 +197,6 @@ body.about-page .content {
   margin-bottom: 1rem;
 }
 
-.post-content a:hover {
-  text-decoration: underline;
-}
-
 /* ======================
    Blog index page
    ====================== */
@@ -212,7 +212,6 @@ body.posts-index .content {
   padding: 3rem;
   margin-left: 180px;
   height: 100vh;
-  overflow: hidden;
 }
 
 body.posts-index .posts-list {
@@ -277,8 +276,6 @@ body.posts-index .post-date {
   /* ============================
      MOBILE HOMEPAGE FLOATING SIDEBAR
      ============================ */
-
-  /* Fullscreen image behind */
   body.home-landing .home-image {
     position: fixed !important;
     inset: 0 !important;
@@ -299,40 +296,32 @@ body.posts-index .post-date {
     object-fit: cover !important;
   }
 
-  /* Floating centered menu */
   body.home-landing .sidebar {
     position: fixed !important;
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
-
     background: rgba(255,255,255,0.95) !important;
     border-radius: 0 !important;
-
-    padding: 0.8rem 1rem !important;
+    padding: 2rem 1.5rem !important;
     width: auto !important;
     max-width: 80% !important;
-
-    text-align: center !important;
-    align-items: center !important;
-
     display: flex !important;
     flex-direction: column !important;
-
+    align-items: center !important;
+    text-align: center !important;
     gap: 0.1rem !important;
     z-index: 10 !important;
   }
 
-  /* Remove spacing on menu container */
   body.home-landing .sidebar-nav {
     margin: 0 !important;
     padding: 0 !important;
     gap: 0 !important;
-    text-align: center !important;
     align-items: center !important;
+    text-align: center !important;
   }
 
-  /* Remove spacing on links */
   body.home-landing .sidebar-nav a {
     margin: 0 !important;
     padding: 0 !important;
@@ -340,10 +329,45 @@ body.posts-index .post-date {
     text-align: center !important;
   }
 
-  /* Works page: 2-column grid */
   .works-gallery {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 20px !important;
     padding: 20px !important;
+  }
+
+  /* MOBILE NON-HOME PAGES */
+  body:not(.home-landing) .sidebar {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    background: white !important;
+    padding: 0.75rem 1.25rem !important;
+    border-bottom: 1px solid #ddd !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.35rem !important;
+    align-items: center !important;
+    text-align: center !important;
+    z-index: 5;
+  }
+
+  body:not(.home-landing) .sidebar-title {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+  }
+
+  body:not(.home-landing) .sidebar-back {
+    display: block !important;
+  }
+
+  body:not(.home-landing) .sidebar-back a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    line-height: 1;
+  }
+
+  body:not(.home-landing) .sidebar-nav {
+    display: none !important;
   }
 }
