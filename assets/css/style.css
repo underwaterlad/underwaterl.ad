@@ -233,7 +233,7 @@ body.posts-index .post-date {
 /* =====================================
    MOBILE / PORTRAIT LAYOUT
    ===================================== */
-@media (max-aspect-ratio: 1/1) {
+@media (max-width:768px) {
 
   .site-wrapper {
     display: block !important;
