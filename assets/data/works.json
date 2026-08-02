@@ -4,181 +4,181 @@
         "year": "2026",
         "medium": "graphite on paper",
         "size": "A4",
-        "image": "/assets/img/become.jpg"
+        "image": "become.jpg"
     },
     {
         "title": "become",
         "year": "2025",
         "medium": "graphite on paper",
         "size": "A5",
-        "image": "/assets/img/become.jpg"
+        "image": "become.jpg"
     },
     {
         "title":"bluff",
         "year": "2024",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "/assets/img/bluff.jpg"
+        "image": "bluff.jpg"
     },
     {
         "title":"commentary",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "/assets/img/commentary.jpg"
+        "image": "commentary.jpg"
     },
     {
         "title":"confidence",
         "year": "2024",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "/assets/img/confidence.jpg"
+        "image": "confidence.jpg"
     },
     {
         "title":"diviner",
         "year": "2024",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "/assets/img/diviner.jpg"
+        "image": "diviner.jpg"
     },
     {
         "title":"doctrine",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "/assets/img/doctrine.jpg"
+        "image": "doctrine.jpg"
     },
     {
         "title":"elimination",
         "year": "2026",
         "medium": "pen on paper",
         "size":"A4",
-        "image": "/assets/img/elimination.jpg"
+        "image": "elimination.jpg"
     },
     {
         "title":"ends",
         "year": "2026",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "/assets/img/ends.jpg"
+        "image": "ends.jpg"
     },
     {
         "title":"having",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "/assets/img/having.jpg"
+        "image": "having.jpg"
     },
     {
         "title":"heart 5",
         "year": "2025",
         "medium": "graphite on paper",  
         "size":"A5",
-        "image": "/assets/img/heart 5.jpg"
+        "image": "heart 5.jpg"
     },
     {
         "title":"hideout",
         "year": "2026",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "/assets/img/hideout.jpg"
+        "image": "hideout.jpg"
     },
     {
         "title":"home",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "/assets/img/home.jpg"
+        "image": "home.jpg"
     },
     {
         "title":"intention",
         "year": "2024",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "/assets/img/intention.jpg"
+        "image": "intention.jpg"
     },
     {
         "title":"limit",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "/assets/img/limit.jpg"
+        "image": "limit.jpg"
     },
     {
         "title":"minute",
         "year": "2024",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "/assets/img/minute.jpg"
+        "image": "minute.jpg"
     },
     {
         "title":"off",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "/assets/img/off.jpg"
+        "image": "off.jpg"
     },
     {
         "title":"order",
         "year": "2026",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "/assets/img/order.jpg"
+        "image": "order.jpg"
     },
     {
         "title":"overt",
         "year": "2024",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "/assets/img/overt.jpg"
+        "image": "overt.jpg"
     },
     {
         "title":"own",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "/assets/img/own.jpg"
+        "image": "own.jpg"
     },
     {
         "title":"pinwheel",
         "year": "2026",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "/assets/img/pinwheel.jpg"
+        "image": "pinwheel.jpg"
     },
     {
         "title":"process",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "/assets/img/process.jpg"
+        "image": "process.jpg"
     },
     {
         "title":"reach",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "/assets/img/reach.jpg"
+        "image": "reach.jpg"
     },
     {
         "title":"test",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "/assets/img/test.jpg"
+        "image": "test.jpg"
     },
     {
         "title":"there",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "/assets/img/test.jpg"
+        "image": "test.jpg"
     },
     {
         "title":"wonderswan",
         "year": "2024",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "/assets/img/wonderswan.jpg"
+        "image": "wonderswan.jpg"
     }
 ]
