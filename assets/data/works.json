@@ -14,6 +14,13 @@
         "image": "become.jpg"
     },
     {
+        "title": "blame",
+        "year": "2026",
+        "medium": "graphite on paper",
+        "size": "A4",
+        "image": "blame.jpg"
+    },
+    {
         "title":"bluff",
         "year": "2024",
         "medium": "graphite on paper",
@@ -47,6 +54,13 @@
         "medium": "graphite on paper",
         "size":"A4",
         "image": "doctrine.jpg"
+    },
+    {
+        "title":"doing",
+        "year": "2026",
+        "medium": "pen on paper",
+        "size":"A5",
+        "image": "doing.jpg"
     },
     {
         "title":"elimination",
