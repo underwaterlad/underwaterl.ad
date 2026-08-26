@@ -1,4 +1,19 @@
 /* ======================
+   Design tokens
+   ====================== */
+:root {
+  --color-white: #fff;
+  --color-white-rgb: 255, 255, 255;
+  --color-text-dark: #333;
+  --color-text-mid: #777;
+  --color-text-light: #999;
+  --color-border-light: #eee;
+  --color-border: #ddd;
+
+  --sidebar-width: 180px;
+}
+
+/* ======================
    Global reset
    ====================== */
 * {
@@ -18,90 +33,6 @@ body {
 }
 
 /* ======================
-   Root wrapper: sidebar + content
-   ====================== */
-.site-wrapper {
-  display: flex;
-  min-height: 100vh;
-}
-
-/* ======================
-   Sidebar (desktop)
-   ====================== */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 180px;
-  height: 100vh;
-  background: #fff;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 2rem 1rem;
-  z-index: 10;
-  line-height: 1;
-}
-
-.sidebar-title {
-  margin-bottom: 0;
-  font-size: 1.5rem;
-  text-align: right;
-}
-
-.sidebar-nav a {
-  color: #333;
-  text-decoration: none;
-  margin: 0.5rem 0;
-  display: block;
-  text-align: right;
-}
-
-.sidebar-back {
-  display: none;
-}
-
-/* ======================
-   Main content
-   ====================== */
-.content {
-  margin-left: 180px;
-  height: 100vh;
-  overflow-y: auto;
-  padding: 0;
-}
-
-/* ======================
-   Homepage
-   ====================== */
-body.home-landing {
-  overflow: hidden;
-}
-
-body.home-landing .home-image {
-  position: absolute;
-  top: 0;
-  left: 180px;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  z-index: 1;
-}
-
-body.home-landing .home-image img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: bottom;
-  display: block;
-}
-
-/* ======================
    Typography
    ====================== */
 h1, h2, h3 {
@@ -118,6 +49,90 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* ======================
+   Root wrapper: sidebar + content
+   ====================== */
+.site-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ======================
+   Sidebar (desktop)
+   ====================== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--sidebar-width);
+  height: 100vh;
+  background: var(--color-white);
+  color: var(--color-text-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 2rem 1rem;
+  z-index: 10;
+  line-height: 1;
+}
+
+.sidebar-title {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+.sidebar-nav a {
+  color: var(--color-text-dark);
+  text-decoration: none;
+  margin: 0.5rem 0;
+  display: block;
+  text-align: right;
+}
+
+.sidebar-back {
+  display: none;
+}
+
+/* ======================
+   Main content
+   ====================== */
+.content {
+  margin-left: var(--sidebar-width);
+  height: 100vh;
+  overflow-y: auto;
+  padding: 0;
+}
+
+/* ======================
+   Homepage
+   ====================== */
+body.home-landing {
+  overflow: hidden;
+}
+
+body.home-landing .home-image {
+  position: absolute;
+  top: 0;
+  left: var(--sidebar-width);
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+body.home-landing .home-image img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  display: block;
 }
 
 /* ======================
@@ -150,9 +165,30 @@ body.works-page .content {
 }
 
 .works-gallery .work .caption {
-  font-size: 0.9rem;
   text-align: center;
-  color: #555;
+}
+
+.works-gallery .work .caption .title {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--color-text-dark);
+}
+
+.works-gallery .work .caption .meta {
+  font-size: 0.8rem;
+  color: var(--color-text-mid);
+}
+
+.works-gallery .work .original {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 4px;
+  color: var(--color-text-mid);
+}
+
+.works-gallery .work .original.sold {
+  color: var(--color-text-light);
+  font-style: italic;
 }
 
 /* ======================
@@ -165,69 +201,6 @@ body.about-page .content {
   padding: 3rem;
   height: 100vh;
   overflow: hidden;
-}
-
-/* ======================
-   Blog post page
-   ====================== */
-.post-content {
-  padding: 3rem;
-  max-width: 1000px;
-}
-
-.post-content h1 {
-  margin-bottom: 10px;
-  font-size: 2rem;
-}
-
-.post-content small {
-  display: block;
-  margin-bottom: 30px;
-  color: #777;
-}
-
-.post-content p {
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-}
-
-.post-content h2,
-.post-content h3 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* ======================
-   Blog index page
-   ====================== */
-body.posts-index {
-  overflow: hidden;
-}
-
-body.posts-index .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 3rem;
-  margin-left: 180px;
-  height: 100vh;
-}
-
-body.posts-index .posts-list {
-  width: 100%;
-  max-width: 760px;
-  list-style: none;
-}
-
-body.posts-index .posts-list li {
-  margin-bottom: 0rem;
-}
-
-body.posts-index .post-date {
-  color: #777;
-  font-size: 0.9rem;
-  margin-left: 0.5rem;
 }
 
 /* =====================================
@@ -248,16 +221,9 @@ body.posts-index .post-date {
     padding: 1rem !important;
     align-items: flex-start !important;
     text-align: left !important;
-    border-bottom: 1px solid #eee !important;
-    background: #fff !important;
-    flex-direction: column !important;
+    border-bottom: 1px solid var(--color-border-light) !important;
+    background: var(--color-white) !important;
     gap: 0.5rem !important;
-  }
-
-  .sidebar-nav {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 0.25rem !important;
   }
 
   .sidebar-nav a {
@@ -301,7 +267,7 @@ body.posts-index .post-date {
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
-    background: rgba(255,255,255,0.95) !important;
+    background: rgba(var(--color-white-rgb), 0.95) !important;
     border-radius: 0 !important;
     padding: 2rem 1.5rem !important;
     width: auto !important;
@@ -312,14 +278,6 @@ body.posts-index .post-date {
     text-align: center !important;
     gap: 0.1rem !important;
     z-index: 10 !important;
-  }
-
-  body.home-landing .sidebar-nav {
-    margin: 0 !important;
-    padding: 0 !important;
-    gap: 0 !important;
-    align-items: center !important;
-    text-align: center !important;
   }
 
   body.home-landing .sidebar-nav a {
@@ -344,9 +302,9 @@ body.posts-index .post-date {
     position: static !important;
     width: 100% !important;
     max-width: 100% !important;
-    background: white !important;
+    background: var(--color-white) !important;
     padding: 0.75rem 1.25rem !important;
-    border-bottom: 1px solid #ddd !important;
+    border-bottom: 1px solid var(--color-border) !important;
     display: flex !important;
     flex-direction: column !important;
     gap: 0.35rem !important;

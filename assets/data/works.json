@@ -4,195 +4,249 @@
         "year": "2026",
         "medium": "graphite on paper",
         "size": "A4",
-        "image": "accent.jpg"
+        "image": "accent.jpg",
+        "sold": true
     },
     {
         "title": "become",
         "year": "2025",
         "medium": "graphite on paper",
         "size": "A5",
-        "image": "become.jpg"
+        "image": "become.jpg",
+        "sold": true
     },
     {
         "title": "blame",
         "year": "2026",
         "medium": "graphite on paper",
         "size": "A4",
-        "image": "blame.jpg"
+        "image": "blame.jpg",
+        "price": "210",
+        "paymentLink": "https://buy.stripe.com/00wfZhasr0LQ8lD2nSenS06",
+        "sold": false
     },
     {
         "title":"bluff",
         "year": "2024",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "bluff.jpg"
+        "image": "bluff.jpg",
+        "sold": true
     },
     {
         "title":"commentary",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "commentary.jpg"
+        "image": "commentary.jpg",
+        "sold": true
     },
     {
         "title":"confidence",
         "year": "2024",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "confidence.jpg"
+        "image": "confidence.jpg",
+        "sold": true
     },
     {
         "title":"diviner",
         "year": "2024",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "diviner.jpg"
+        "image": "diviner.jpg",
+        "sold": true
     },
     {
         "title":"doctrine",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "doctrine.jpg"
+        "image": "doctrine.jpg",
+        "sold": true
     },
     {
         "title":"doing",
         "year": "2026",
         "medium": "pen on paper",
         "size":"A5",
-        "image": "doing.jpg"
+        "image": "doing.jpg",
+        "price": "140",
+        "paymentLink": "https://buy.stripe.com/8x228r0RRcuy31j1jOenS05",
+        "sold": false
     },
     {
         "title":"elimination",
         "year": "2026",
         "medium": "pen on paper",
         "size":"A4",
-        "image": "elimination.jpg"
+        "image": "elimination.jpg",
+        "price": "220",
+        "paymentLink": "https://buy.stripe.com/aFadR9gQP7ae6dv1jOenS04",
+        "sold": false
     },
     {
         "title":"ends",
         "year": "2026",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "ends.jpg"
+        "image": "ends.jpg",
+        "price": "140",
+        "paymentLink": "https://buy.stripe.com/4gM4gz4433Y2bxPd2wenS0a",
+        "sold": false
     },
     {
         "title":"having",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "having.jpg"
+        "image": "having.jpg",
+        "price": "180",
+        "paymentLink": "https://buy.stripe.com/14AdR92ZZfGKcBT0fKenS0d",
+        "sold": false
     },
     {
         "title":"heart 5",
         "year": "2025",
-        "medium": "graphite on paper",  
+        "medium": "graphite on paper",
         "size":"A5",
-        "image": "heart 5.jpg"
+        "image": "heart 5.jpg",
+        "sold": true
     },
     {
         "title":"hideout",
         "year": "2026",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "hideout.jpg"
+        "image": "hideout.jpg",
+        "price": "220",
+        "paymentLink": "https://buy.stripe.com/bJe5kD587gKOeK15A4enS0b",
+        "sold": false
     },
     {
         "title":"home",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "home.jpg"
+        "image": "home.jpg",
+        "sold": true
     },
     {
         "title":"intention",
         "year": "2024",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "intention.jpg"
+        "image": "intention.jpg",
+        "sold": true
     },
     {
         "title":"limit",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "limit.jpg"
+        "image": "limit.jpg",
+        "sold": true
     },
     {
         "title":"minute",
         "year": "2024",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "minute.jpg"
+        "image": "minute.jpg",
+        "sold": true
     },
     {
         "title":"off",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "off.jpg"
+        "image": "off.jpg",
+        "price": "140",
+        "paymentLink": "https://buy.stripe.com/6oU00j6cb7aeeK19QkenS08",
+        "sold": false
     },
     {
         "title":"order",
         "year": "2026",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "order.jpg"
+        "image": "order.jpg",
+        "price": "140",
+        "paymentLink": "https://buy.stripe.com/5kQ28rfML0LQ9pH7IcenS09",
+        "sold": false
     },
     {
         "title":"overt",
         "year": "2024",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "overt.jpg"
+        "image": "overt.jpg",
+        "sold": true
     },
     {
         "title":"own",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "own.jpg"
+        "image": "own.jpg",
+        "price": "130",
+        "paymentLink": "https://buy.stripe.com/00waEX5879im9pHd2wenS0c",
+        "sold": false
     },
     {
         "title":"pinwheel",
         "year": "2026",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "pinwheel.jpg"
+        "image": "pinwheel.jpg",
+        "price": "190",
+        "paymentLink": "https://buy.stripe.com/aFa7sL8kjdyCfO53rWenS03",
+        "sold": false
     },
     {
         "title":"process",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "process.jpg"
+        "image": "process.jpg",
+        "sold": true
     },
     {
         "title":"reach",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A5",
-        "image": "reach.jpg"
+        "image": "reach.jpg",
+        "price": "130",
+        "paymentLink": "https://buy.stripe.com/3cIfZh0RRdyCdFX0fKenS07",
+        "sold": false
     },
     {
         "title":"test",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "test.jpg"
+        "image": "test.jpg",
+        "price": "190",
+        "paymentLink": "https://buy.stripe.com/cNi4gzeIH9imfO5geIenS01",
+        "sold": false
     },
     {
         "title":"there",
         "year": "2025",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "there.jpg"
+        "image": "there.jpg",
+        "sold": true
     },
     {
         "title":"wonderswan",
         "year": "2024",
         "medium": "graphite on paper",
         "size":"A4",
-        "image": "wonderswan.jpg"
+        "image": "wonderswan.jpg",
+        "price": "200",
+        "paymentLink": "https://buy.stripe.com/5kQ4gz8kj5268lDd2wenS02",
+        "sold": false
     }
 ]
