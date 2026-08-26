@@ -49,7 +49,7 @@ fetch('/assets/data/works.json')
             }
 
             item.innerHTML = `
-                <img src="/assets/img/${work.image}" alt="${work.title}">
+                <img src="/assets/img/${work.image}" alt="${work.title}" loading="lazy">
 
                 <p class="caption">
                     <span class="title">${work.title}</span><br>
