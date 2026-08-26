@@ -191,6 +191,96 @@ body.works-page .content {
   font-style: italic;
 }
 
+/* Gallery column count is independent of the sidebar/top-bar breakpoint
+   below — it steps down earlier so images stay a decent size. */
+@media (max-width:1280px) {
+  .works-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px;
+  }
+}
+
+@media (max-width:900px) {
+  .works-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 24px;
+  }
+}
+
+@media (max-width:600px) {
+  .works-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    padding: 16px;
+  }
+}
+
+/* Lightbox is only enabled (via JS) above the 1-column breakpoint */
+@media (min-width:601px) {
+  .works-gallery .work img {
+    cursor: zoom-in;
+  }
+}
+
+/* ======================
+   Lightbox
+   ====================== */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: calc(100vw - 40px);
+  max-height: calc(100vh - 40px);
+}
+
+.lightbox img {
+  max-height: calc(100vh - 40px);
+  max-width: calc(100vw - 320px);
+  object-fit: contain;
+}
+
+.lightbox-caption {
+  flex: 0 0 240px;
+  text-align: left;
+  color: #F5F5F5;
+}
+
+.lightbox-caption .title {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.lightbox-caption .meta {
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.lightbox-caption .original {
+  font-size: 0.85rem;
+  text-align: left;
+  margin-top: 12px;
+}
+
+.lightbox-caption .original.sold {
+  font-style: italic;
+}
+
 /* ======================
    About page
    ====================== */
@@ -289,12 +379,6 @@ body.about-page .content {
 
   body.home-landing .sidebar-title {
     text-align: center !important;
-  }
-
-  .works-gallery {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 20px !important;
-    padding: 20px !important;
   }
 
   /* MOBILE NON-HOME PAGES */

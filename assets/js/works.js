@@ -4,6 +4,33 @@ fetch('/assets/data/works.json')
 
         const gallery = document.getElementById('works-gallery');
 
+        const lightbox = document.createElement('div');
+        lightbox.className = 'lightbox';
+
+        const lightboxContent = document.createElement('div');
+        lightboxContent.className = 'lightbox-content';
+
+        const lightboxImg = document.createElement('img');
+        const lightboxCaption = document.createElement('div');
+        lightboxCaption.className = 'lightbox-caption';
+
+        lightboxContent.appendChild(lightboxImg);
+        lightboxContent.appendChild(lightboxCaption);
+        lightbox.appendChild(lightboxContent);
+        document.body.appendChild(lightbox);
+
+        lightbox.addEventListener('click', event => {
+            if (!lightboxContent.contains(event.target)) {
+                lightbox.classList.remove('active');
+            }
+        });
+
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape') {
+                lightbox.classList.remove('active');
+            }
+        });
+
         works.forEach(work => {
 
             const item = document.createElement('div');
@@ -30,6 +57,20 @@ fetch('/assets/data/works.json')
                 </p>
                 ${originalMarkup}
             `;
+
+            const img = item.querySelector('img');
+            img.addEventListener('click', () => {
+                if (window.matchMedia('(min-width: 601px)').matches) {
+                    lightboxImg.src = img.src;
+                    lightboxImg.alt = img.alt;
+                    lightboxCaption.innerHTML = `
+                        <p class="title">${work.title}</p>
+                        <p class="meta">${work.year} ${work.size} ${work.medium}</p>
+                        ${originalMarkup}
+                    `;
+                    lightbox.classList.add('active');
+                }
+            });
 
             gallery.appendChild(item);
 
