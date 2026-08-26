@@ -59,6 +59,17 @@ fetch('/assets/data/works.json')
             `;
 
             const img = item.querySelector('img');
+
+            let fullImagePreloaded = false;
+            const preloadFullImage = () => {
+                if (!fullImagePreloaded && window.matchMedia('(min-width: 601px)').matches) {
+                    fullImagePreloaded = true;
+                    new Image().src = `/assets/img/${work.image}`;
+                }
+            };
+            img.addEventListener('mouseenter', preloadFullImage);
+            img.addEventListener('touchstart', preloadFullImage, { passive: true });
+
             img.addEventListener('click', () => {
                 if (window.matchMedia('(min-width: 601px)').matches) {
                     lightboxImg.src = `/assets/img/${work.image}`;
