@@ -31,6 +31,21 @@ fetch('/assets/data/works.json')
             }
         });
 
+        let lightboxRequestId = 0;
+        const setLightboxImage = (src, alt) => {
+            const thisRequest = ++lightboxRequestId;
+            lightboxImg.classList.remove('loaded');
+
+            const loader = new Image();
+            loader.onload = () => {
+                if (thisRequest !== lightboxRequestId) return;
+                lightboxImg.src = src;
+                lightboxImg.alt = alt;
+                lightboxImg.classList.add('loaded');
+            };
+            loader.src = src;
+        };
+
         works.forEach(work => {
 
             const item = document.createElement('div');
@@ -72,8 +87,7 @@ fetch('/assets/data/works.json')
 
             img.addEventListener('click', () => {
                 if (window.matchMedia('(min-width: 601px)').matches) {
-                    lightboxImg.src = `/assets/img/${work.image}`;
-                    lightboxImg.alt = img.alt;
+                    setLightboxImage(`/assets/img/${work.image}`, img.alt);
                     lightboxCaption.innerHTML = `
                         <p class="title">${work.title}</p>
                         <p class="meta">${work.year} ${work.size} ${work.medium}</p>
