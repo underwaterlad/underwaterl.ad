@@ -49,7 +49,7 @@ fetch('/assets/data/works.json')
             }
 
             item.innerHTML = `
-                <img src="/assets/img/${work.image}" alt="${work.title}" loading="lazy">
+                <img src="/assets/img/thumbs/${work.image}" alt="${work.title}" loading="lazy">
 
                 <p class="caption">
                     <span class="title">${work.title}</span><br>
@@ -61,7 +61,7 @@ fetch('/assets/data/works.json')
             const img = item.querySelector('img');
             img.addEventListener('click', () => {
                 if (window.matchMedia('(min-width: 601px)').matches) {
-                    lightboxImg.src = img.src;
+                    lightboxImg.src = `/assets/img/${work.image}`;
                     lightboxImg.alt = img.alt;
                     lightboxCaption.innerHTML = `
                         <p class="title">${work.title}</p>
