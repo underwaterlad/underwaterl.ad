@@ -229,7 +229,7 @@
         "image": "test.jpg",
         "price": "190",
         "paymentLink": "https://buy.stripe.com/cNi4gzeIH9imfO5geIenS01",
-        "sold": false
+        "sold": true
     },
     {
         "title":"there",
